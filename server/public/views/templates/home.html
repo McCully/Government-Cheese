@@ -1,0 +1,11 @@
+<div>
+  <a href="#register">Register</a>
+  <a href="#signIn">Sign In</a>
+  <div class="container">
+    <h1 id="welcome" class="lead">Welcome, {{userName}}!</h1>
+    <button class="btn btn-default" ng-click="logout()">Log Out</button>
+    <button ng-click = "getRecipes()">recipes</button>
+</div>
+<div ng-repeat = "result in results">
+  <h2>{{result.title}}</h2>
+</div>
