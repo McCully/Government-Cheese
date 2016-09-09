@@ -16,6 +16,7 @@ myApp.controller('homeController', ['$scope', '$http', '$location', 'DataFactory
       f2fUrl: $scope.recipeResults.f2f_url
     };
     console.log(faveRecipe);
+    
     $scope.dataFactory.postToDatabase(faveRecipe);
   };
 
