@@ -4,8 +4,8 @@
   <div class="container">
     <h1 id="welcome" class="lead">Welcome, {{userName}}!</h1>
     <button class="btn btn-default" ng-click="logout()">Log Out</button>
-    <button ng-click = "getRecipes()">recipes</button>
+    <button ng-click = "getRecipes() ; getAllrecipes()">recipes</button>
 </div>
-<div ng-repeat = "result in results">
-  <h2>{{result.title}}</h2>
+<div ng-repeat = "recipes in getAllRecipes">
+  <h2>{{recipes}}</h2>
 </div>
