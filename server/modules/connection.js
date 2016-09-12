@@ -1,5 +1,5 @@
 var connectionString = "";
-//whats this
+//whats thiss
 
 if(process.env.DATABASE_URL != undefined) {
   connectionString = process.env.DATABASE_URL + 'ssl';
