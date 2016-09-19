@@ -1,11 +1,45 @@
-<div>
-  <a href="#register">Register</a>
-  <a href="#signIn">Sign In</a>
-  <div class="container">
-    <h1 id="welcome" class="lead">Welcome, {{userName}}!</h1>
-    <button class="btn btn-default" ng-click="logout()">Log Out</button>
-    <button ng-click = "getRecipes() ; getAllrecipes()">recipes</button>
+<div ng-include = "'views/templates/topNav.html'"></div>
+<div ng-include = "'views/templates/sideNav.html'"></div>
+<div col-md-9 recipe-container>
+    <div id=recipes>
+        <div ng-repeat = "x in recipeResults" class="recipe">
+            <a ng-href = "{{x.source_url}}">
+                <img ng-src = "{{x.image_url}}">
+            </a>
+            <div class = "recipe-info">
+                <a ng-href="{{x.f2f_url}}">
+                    <div class = "recipe-title">{{x.title}}</div>
+                </a>
+            </div>
+            <a class = "favorite-icon" ng-click = "toggleFaved(x.recipe_id , x.image_url, x.source_url, x.title , x.f2f_ur)">
+            <i class="fa fa-heart fa-2x"></i>
+            </a>
+        </div>
+
+    </div>
+
 </div>
-<div ng-repeat = "recipes in getAllRecipes">
-  <h2>{{recipes}}</h2>
-</div>
+
+
+
+
+
+<!-- <div id = "recipeContainer">
+    <div class = recipe-container>
+        <div id= "recipes">
+            <div ng-repeat = "x in recipeResults" class = "recipe"> --> -->
+
+                    <!-- <p ng-click = "favedRecipe()">Fav</p>
+                    <a ng-href= "{{x.source_url}}">
+                        <div class = "recipe-img" ng-style="{'background-image':'url({{x.image_url}})'}"></div>
+                    </a>
+                    <div class = "recipeInfo">
+                        <a ng-href = "{{x.f2f_url}}">
+                            <div class= "recipe-title">{{x.title}}</div>
+                        </a> -->
+                    <!-- </div>
+
+            </div> -->
+        <!-- </div>
+    </div> -->
+<!-- </div>  -->

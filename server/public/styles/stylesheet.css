@@ -1,0 +1,255 @@
+.recipe{
+  overflow: hidden;
+  display: inline-block;
+  width: 300px;
+  margin-bottom: 5px;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#recipes{
+  padding-top: 32px;
+  padding-left: 148px;
+}
+.recipe .favorite-icon{
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  border radius: 50px;
+}
+i{
+  color: red;
+}
+#ingredients_wrapper{
+  width: 50px;
+  length: 100px;
+}
+
+.recipe img{
+  width: 100%;
+  length: 100%;
+  display: inline-block;
+}
+
+.recipe .recipe-info{
+  display: block;
+  padding: 5px 10px;
+  length: 110px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /*margin-top: 10px;*/
+  background: rgba(0, 0, 0, 0.6);
+  /*text-align: left;*/
+
+}
+.recipeInfo .recipe-title{
+  max-width: 15pc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1pc;
+  opacity: .9;
+  font-weight: 300;
+  color: #fff;
+}
+.recipe-tile{
+  position: relative;
+
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+.recipe-container{
+  z-index: -1;
+  margin-left: 148px;
+  margin-top: 31px;
+  padding-left: 5px;
+  padding-top: 5px;
+
+}
+/*.recipeTile{
+  display: inline-block;
+  position: absolute;
+  left: 200px;
+}*/
+
+.recipe-inline{
+  display: block;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+.recipeControl{
+  width: 200px;
+  z-index: 1;
+  padding: 6px 6px;
+  width: 100px;
+  height: 20px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 0;
+  /*backface-visibility: visible;*/
+}
+
+
+
+h2 span {
+  font-size: 18px;
+}
+
+.navbar{
+  min-height: 10px;
+  border-bottom: 0;
+  length: 100%;
+  margin-bottom: 0;
+}
+.navbar-brand{
+  font-size: 26px;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*#wrapper.toggled {
+    padding-left: 250px;
+}*/
+#sidebar-wrapper Form .form-group{
+  vertical-align: middle;
+  width: 100%;
+  display: inline-block;
+
+}
+
+#sidebar-wrapper {
+  padding-left: 15spx;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+
+    z-index: 1000;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    height: 100%;
+    overflow-y: auto;
+    background: #999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+/*#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    /*margin-right: -250px;*/*/
+}
+
+/* Sidebar Styles */
+.navbar-header{
+  margin-bottom: 0;
+}
+.sidebar-nav {
+  width: inherit;;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+/*@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 150px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}*/

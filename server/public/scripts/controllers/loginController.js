@@ -1,10 +1,21 @@
-myApp.controller('loginController', ['$scope', '$http', '$location', function($scope, $http, $location) {
+myApp.controller('loginController', ['$scope', '$http', '$location', '$modal' , function($scope, $http, $location , $modal) {
+
+  $scope.open = function() {
+    var modalInstance = $modal.open({
+      templateUrl: '../views/templates/signIn.html',
+      controller: modalInstanceCtrl
+    });
+  };
+
+}]);
+
+myApp.controller('ModelInstanceCtrl' , ['$scope' , '$modalInstance' , function($scope, $modalInstance){
   $scope.user = {
     username: '',
     password: ''
   };
   $scope.message = '';
-
+  
   $scope.login = function() {
     if($scope.user.username == '' || $scope.user.password == '') {
       $scope.message = "Enter your username and password!";
@@ -22,4 +33,4 @@ myApp.controller('loginController', ['$scope', '$http', '$location', function($s
       });
     }
   }
-}]);
+}])
