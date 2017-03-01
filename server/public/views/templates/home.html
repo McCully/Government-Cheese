@@ -3,9 +3,11 @@
 <div col-md-9 recipe-container>
     <div id=recipes>
         <div ng-repeat = "x in recipeResults" class="recipe">
-            <a ng-href = "{{x.source_url}}">
-                <img ng-src = "{{x.image_url}}">
-            </a>
+            <div class = "img-wrapper">
+                <a ng-href = "{{x.source_url}}">
+                    <img ng-src = "{{x.image_url}}">
+                </a>
+            </div>
             <div class = "recipe-info">
                 <a ng-href="{{x.f2f_url}}">
                     <div class = "recipe-title">{{x.title}}</div>
