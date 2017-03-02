@@ -5,6 +5,8 @@ myApp.controller('homeController', ['$scope', '$http', '$location', 'DataFactory
   $scope.ingredientSelected = '';
   console.log($scope.$selectedIngredientsArr)
 
+  
+
 
   $scope.toggleFaved = function() {
     // console.log(recipeResults.recipe_id);
@@ -16,7 +18,7 @@ myApp.controller('homeController', ['$scope', '$http', '$location', 'DataFactory
       f2fUrl: $scope.recipeResults.f2f_url
     };
     console.log(faveRecipe);
-    
+
     $scope.dataFactory.postToDatabase(faveRecipe);
   };
 
@@ -65,7 +67,7 @@ myApp.controller('homeController', ['$scope', '$http', '$location', 'DataFactory
     console.log("ingredients to search " , $scope.selectedIngredientsArr);
     $http.get('/recipes', {
           params: {text: $scope.selectedIngredientsArr}}).then(function(response){
-      $scope.recipeResults = response.data.recipes
+      $scope.recipeResults = response.data.recipes;
       console.log("1 " , $scope.recipeResults);
       // console.log("recipe GET " , $scope.recipeResults.length , $scope.recipeResults);
     });

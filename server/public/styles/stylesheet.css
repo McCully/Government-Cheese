@@ -31,16 +31,16 @@ i{
   length: 100px;
 }
 
-.image-wrapper{
+/*.image-wrapper{
   max-width: auto;
   max-height: auto;
-}
+}*/
 
-/*.recipe img{
+.recipe img{
   max-width: 100%;
   max-height: 50%;
   display: inline-block;
-}*/
+}
 
 .recipe .recipe-info{
   display: block;
@@ -90,14 +90,14 @@ body{
 }*/
 
 .recipe-inline{
-  display: block;
-  margin-right: 5px;
+  display: inline-block;
+  /*margin-right: 5px;*/
   box-sizing: border-box;
 }
 .recipeControl{
   width: 200px;
   z-index: 1;
-  padding: 6px 6px;
+  /*padding: 6px 6px;*/
   width: 100px;
   height: 20px;
   border-top: 1px;
@@ -105,6 +105,14 @@ body{
   border-left: 1px;
   border-right: 0;
   /*backface-visibility: visible;*/
+}
+
+.recipeSubmit{
+  display: inline-block;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 
@@ -133,18 +141,17 @@ h2 span {
 /*#wrapper.toggled {
     padding-left: 250px;
 }*/
-#sidebar-wrapper Form .form-group{
-  vertical-align: middle;
-  width: 100%;
+/*#sidebar-wrapper Form .form-group{
+  margin-bottom: 0px;
   display: inline-block;
 
-}
+}*/
 
 #sidebar-wrapper {
-  padding-left: 15spx;
-  padding-top: 5px;
+  padding-left: 15px;
+  padding-top: 20px;
   padding-bottom: 5px;
-  padding-right: 5px;
+  padding-right: 15px;
 
     z-index: 1000;
     position: fixed;
