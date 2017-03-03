@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.delIngredient{
+
+}
+
 #recipes{
   padding-top: 32px;
   padding-left: 200px;
@@ -27,15 +31,20 @@ i{
   color: red;
 }
 #ingredients_wrapper{
-  width: 50px;
-  length: 100px;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.ingredientName{
+  margin: 0 0 0px;
+  width: 120px;
 }
 
-/*.image-wrapper{
-  max-width: auto;
-  max-height: auto;
-}*/
-
+h2.sideTitle{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
 .recipe img{
   max-width: 100%;
   max-height: 50%;
@@ -83,28 +92,20 @@ body{
   padding-top: 5px;
 
 }
-/*.recipeTile{
-  display: inline-block;
-  position: absolute;
-  left: 200px;
-}*/
-
 .recipe-inline{
   display: inline-block;
-  /*margin-right: 5px;*/
   box-sizing: border-box;
 }
+
 .recipeControl{
   width: 200px;
   z-index: 1;
-  /*padding: 6px 6px;*/
   width: 100px;
   height: 20px;
   border-top: 1px;
   border-bottom: 1px;
   border-left: 1px;
   border-right: 0;
-  /*backface-visibility: visible;*/
 }
 
 .recipeSubmit{
@@ -214,15 +215,16 @@ h2 span {
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
+.sidebar-brand {
+    height: auto;
+    width: 100%;
     font-size: 18px;
     line-height: 60px;
 }
 
-.sidebar-nav > .sidebar-brand a {
+/*.sidebar-brand a {
     color: #999999;
-}
+}*/
 
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;

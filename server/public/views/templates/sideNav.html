@@ -4,22 +4,18 @@
         <button class ="recipeSubmit" type = "submit" ng-click = "resetField">Add</button>
     </form>
     <hr></hr>
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand"></li>
-        <li>
-            <div id = "searchRecipe_wrapper">
-
-
-            </div>
-        </li>
-        <li>
-            <div id "ingredients_wrapper" ng-repeat = "ingredient in selectedIngredientsArr">
-                <p>{{ingredient}}</p>
-                <button ng-click = "del(ingredient)">X</button>
-            </div>
+    <div class="sidebar-brand">
+        <h2 class ="sideTitle">Ingredients Selected</h2>
+    </div>
+    <div class="sidebar-nav" ng-model = "clearAll">
+        <div id = "ingredients_wrapper" ng-repeat = "ingredient in selectedIngredientsArr">
+            <p class = "ingredientName">{{ingredient}}</p>
+            <button class ="delIngredient" ng-click = "del(ingredient)">X</button>
+        </div>
+        <div ng-hide = "clearAll">
             <button ng-click="clear()">Clear all</button>
-        </li>
+        </div>
 
-    </ul>
+    </div>
 </div>
  ng-click = "addIngredient(ingredientSelected)
