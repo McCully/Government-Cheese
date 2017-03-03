@@ -1,9 +1,9 @@
 <div id="sidebar-wrapper">
     <div class = "top-brand">
-        <h2 class = "formTitle">Enter Ingredients OR A Recipe</h2>
+        <h2 class = "formTitle">Enter Ingredients<br>or<br>A Recipe Name</h2>
     </div>
     <form name = "addIngred" class = "recipe-inline"  ng-submit = "addIngredient(ingredientSelected)">
-        <input type="text" class="recipeControl" name = "searchField" ng-model = "ingredientSelected" placeholder="Enter Ingredient" />
+        <input type="text" class="recipeControl" name = "searchField" ng-model = "ingredientSelected" placeholder="Ingredients" />
         <button class ="recipeSubmit" type = "submit" ng-click = "resetField">Add</button>
     </form>
     <hr></hr>
