@@ -24,7 +24,6 @@
   left: 10px;
   height: 30px;
   width: 30px;
-  /*background-color: rgba(0, 0, 0, 0.1);*/
   border radius: 50px;
 }
 i{
@@ -38,6 +37,14 @@ i{
 .ingredientName{
   margin: 0 0 0px;
   width: 120px;
+}
+
+.top-brand{
+
+}
+
+.formTitle{
+
 }
 
 h2.sideTitle{
@@ -116,8 +123,6 @@ body{
   border-right: 0px;
 }
 
-
-
 h2 span {
   font-size: 18px;
 }
@@ -139,32 +144,22 @@ h2 span {
     transition: all 0.5s ease;
 }
 
-/*#wrapper.toggled {
-    padding-left: 250px;
-}*/
-/*#sidebar-wrapper Form .form-group{
-  margin-bottom: 0px;
-  display: inline-block;
-
-}*/
-
 #sidebar-wrapper {
   padding-left: 15px;
   padding-top: 20px;
   padding-bottom: 5px;
   padding-right: 15px;
-
-    z-index: 1000;
-    position: fixed;
-    left: 0px;
-    top: 50px;
-    height: 100%;
-    overflow-y: auto;
-    background: #999;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  z-index: 1000;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  height: 100%;
+  overflow-y: auto;
+  background: #999;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -175,11 +170,6 @@ h2 span {
     width: 100%;
     position: absolute;
     padding: 15px;
-}
-
-/*#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    /*margin-right: -250px;*/*/
 }
 
 /* Sidebar Styles */
@@ -215,7 +205,7 @@ h2 span {
     text-decoration: none;
 }
 
-.sidebar-brand {
+.bottom-brand {
     height: auto;
     width: 100%;
     font-size: 18px;
@@ -226,7 +216,7 @@ h2 span {
     color: #999999;
 }*/
 
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav > .bottom-brand a:hover {
     color: #fff;
     background: none;
 }
@@ -259,12 +249,12 @@ h2 span {
     }
 }
 
-@font-face {
+/*@font-face {
   font-family: 'MyWebFont';
   src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}*/
+  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */*/
+       /*url('webfont.woff2') format('woff2'), /* Super Modern Browsers */*/
+       /*url('webfont.woff') format('woff'), /* Pretty Modern Browsers */*/
+       /*url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */*/
+       /*url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */*/
+/*}*/
